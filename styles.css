@@ -89,7 +89,7 @@ body {
 
 .landing {
   background: linear-gradient(rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0.45)),
-    url("../images/bg.jpg");
+    url("bg.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -160,7 +160,6 @@ header {
 
 .banner {
   width: 100%;
-  height: 320px;
   object-fit: cover;
   animation: fadeDown 1s ease;
 }
@@ -259,7 +258,7 @@ main h1 {
 }
 
 .card {
-  width: 320px;
+  width: 350px;
   background: white;
   border-radius: 25px;
   overflow: hidden;
@@ -276,7 +275,6 @@ main h1 {
 
 .card img {
   width: 100%;
-  height: 220px;
   object-fit: cover;
   transition: 0.5s;
 }
@@ -393,6 +391,51 @@ footer p {
 
 ::-webkit-scrollbar-thumb:hover {
   background: #e68900;
+}
+.food-card {
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  background: white;
+  margin-bottom: 30px;
+  padding: 20px;
+
+  border-radius: 25px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+
+  transition: 0.4s;
+}
+
+.food-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 35px rgba(0, 0, 0, 0.2);
+}
+
+.food-img {
+  width: 250px;
+  height: 180px;
+  object-fit: cover;
+  border-radius: 20px;
+  transition: 0.4s;
+}
+
+.food-card:hover .food-img {
+  transform: scale(1.05);
+}
+
+.food-info {
+  flex: 1;
+}
+
+.food-info h2 {
+  color: #ff9800;
+  margin-bottom: 15px;
+}
+
+.food-info p {
+  line-height: 1.8;
+  color: #555;
 }
 
 /* =========================
